@@ -9,11 +9,9 @@ time but with a time limit from start to finish
 3. User management at different levels (Teachers/students)
 4. Question Bank Entry form
 
-## Prerequisites :
+## Requirements :
 - Visual Studio 2015 with C# ASP.NET 
 - MySQL, MySQL workbench
 - MySQL for visual studio
 - MySQL .NET connector
 
-## Screenshots :
-![HomePage](https://github.com/Dipali742/MCQ_Exam_Portal/blob/main/Screenshots/Homepage.jpg)
