@@ -19,7 +19,8 @@ public partial class Student_login : System.Web.UI.Page
 
     protected void Button1_Click(object sender, EventArgs e)
     {
-        con = new MySqlConnection("server=localhost;user id=2018BCGRP27;database=mcqexam;password=54397215");
+        string connString = System.Configuration.ConfigurationManager.ConnectionStrings["mcqexamConnectionString2"].ConnectionString;
+        con = new MySqlConnection(connString);
         con.Open();
         str = "select * from student where sid='"+sid.Text+"' and spassword='" + Spassword.Text + "'";
         cmd = new MySqlCommand(str, con);

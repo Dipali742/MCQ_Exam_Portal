@@ -41,7 +41,8 @@ public partial class Edit_Quiz : System.Web.UI.Page
 
     private void Populate()
     {
-        con = new MySqlConnection("server=localhost;user id=2018BCGRP27;database=mcqexam;password=54397215");
+        string connString = System.Configuration.ConfigurationManager.ConnectionStrings["mcqexamConnectionString2"].ConnectionString;
+        con = new MySqlConnection(connString);
         con.Open();
         str = "SELECT * FROM mcqexam.Question WHERE qid='" + quizid + "' ";
         cmd = new MySqlCommand(str, con);
@@ -89,7 +90,8 @@ public partial class Edit_Quiz : System.Web.UI.Page
             Label6.Text = row.Cells[8].Text;
             Label11.Text = row.Cells[0].Text;
             
-            con = new MySqlConnection("server=localhost;user id=2018BCGRP27;database=mcqexam;password=54397215");
+            string connString = System.Configuration.ConfigurationManager.ConnectionStrings["mcqexamConnectionString2"].ConnectionString;
+            con = new MySqlConnection(connString);
             con.Open();
 
 
@@ -123,7 +125,8 @@ public partial class Edit_Quiz : System.Web.UI.Page
             int index = Convert.ToInt32(e.CommandArgument);
             GridViewRow row = GridView2.Rows[index];
             Label4.Text=  row.Cells[0].Text;
-            con = new MySqlConnection("server=localhost;user id=2018BCGRP27;database=mcqexam;password=54397215");
+            string connString = System.Configuration.ConfigurationManager.ConnectionStrings["mcqexamConnectionString2"].ConnectionString;
+            con = new MySqlConnection(connString);
             con.Open();
             str = "DELETE FROM mcqexam.question where queid='" + Label4.Text + "'";
             cmd = new MySqlCommand(str, con);
@@ -143,7 +146,8 @@ public partial class Edit_Quiz : System.Web.UI.Page
 
     protected void Delete_Quiz(object sender, EventArgs e)
     {
-        con = new MySqlConnection("server=localhost;user id=2018BCGRP27;database=mcqexam;password=54397215");
+        string connString = System.Configuration.ConfigurationManager.ConnectionStrings["mcqexamConnectionString2"].ConnectionString;
+        con = new MySqlConnection(connString);
         con.Open();
 
         str = "SELECT * FROM Question WHERE qid='" + quizid + "'";
@@ -181,7 +185,8 @@ public partial class Edit_Quiz : System.Web.UI.Page
         MySqlConnection con;
         MySqlCommand cmd, cmd1;
         String str, str1;
-        con = new MySqlConnection("server=localhost;user id=2018BCGRP27;database=mcqexam;password=54397215");
+        string connString = System.Configuration.ConfigurationManager.ConnectionStrings["mcqexamConnectionString2"].ConnectionString;
+        con = new MySqlConnection(connString);
         con.Open();
 
         string filename = Path.GetFileName(FileUpload1.PostedFile.FileName);

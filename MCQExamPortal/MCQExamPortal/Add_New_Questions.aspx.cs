@@ -34,7 +34,8 @@ public partial class Add_New_Questions : System.Web.UI.Page
         MySqlConnection con;
         //MySqlCommand cmd;
         //String str;
-        con = new MySqlConnection("server=localhost;user id=2018BCGRP27;database=mcqexam;password=54397215");
+        string connString = System.Configuration.ConfigurationManager.ConnectionStrings["mcqexamConnectionString2"].ConnectionString;
+        con = new MySqlConnection(connString);
     }
 
     protected void Add_Student(object sender, EventArgs e)
@@ -47,7 +48,8 @@ public partial class Add_New_Questions : System.Web.UI.Page
         MySqlConnection con;
         MySqlCommand cmd,cmd1;
         String str,str1;
-        con = new MySqlConnection("server=localhost;user id=2018BCGRP27;database=mcqexam;password=54397215");
+        string connString = System.Configuration.ConfigurationManager.ConnectionStrings["mcqexamConnectionString2"].ConnectionString;
+        con = new MySqlConnection(connString);
         con.Open();
         
       

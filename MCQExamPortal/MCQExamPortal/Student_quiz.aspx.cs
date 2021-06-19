@@ -25,7 +25,8 @@ public partial class Student_quiz : System.Web.UI.Page
         }
         else
         {
-            con = new MySqlConnection("server=localhost;user id=2018BCGRP27;database=mcqexam;password=54397215");
+            string connString = System.Configuration.ConfigurationManager.ConnectionStrings["mcqexamConnectionString2"].ConnectionString;
+            con = new MySqlConnection(connString);
             con.Open();
             str = "select time from quiz where qid='" + quizid + "'";
             cmd = new MySqlCommand(str, con);
@@ -71,7 +72,8 @@ public partial class Student_quiz : System.Web.UI.Page
 
     private void Populate()
     {
-        con = new MySqlConnection("server=localhost;user id=2018BCGRP27;database=mcqexam;password=54397215");
+        string connString = System.Configuration.ConfigurationManager.ConnectionStrings["mcqexamConnectionString2"].ConnectionString;
+        con = new MySqlConnection(connString);
         con.Open();
         str = "select * from question where qid='"+quizid+"'";
         cmd = new MySqlCommand(str, con);
@@ -125,7 +127,8 @@ public partial class Student_quiz : System.Web.UI.Page
             }
         }
         
-        con = new MySqlConnection("server=localhost;user id=2018BCGRP27;database=mcqexam;password=54397215");
+        string connString = System.Configuration.ConfigurationManager.ConnectionStrings["mcqexamConnectionString2"].ConnectionString;
+        con = new MySqlConnection(connString);
         con.Open();
         str = "insert into result(qid,marks,sid,susername) values ('" + TextBox1.Text + "','" + result + "','" + Session["id"] + "','" + Session["username"]+"')";
         cmd = new MySqlCommand(str, con);

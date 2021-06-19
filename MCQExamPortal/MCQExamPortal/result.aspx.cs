@@ -26,7 +26,8 @@ public partial class result : System.Web.UI.Page
     }
     private void BindGridView()
     {
-        con = new MySqlConnection("server=localhost;user id=2018BCGRP27;database=mcqexam;password=54397215");
+        string connString = System.Configuration.ConfigurationManager.ConnectionStrings["mcqexamConnectionString2"].ConnectionString;
+        con = new MySqlConnection(connString);
         con.Open();
         str = "select * from result where sid='"+Session["id"]+"'";
         cmd = new MySqlCommand(str, con);

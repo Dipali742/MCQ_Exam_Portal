@@ -18,7 +18,8 @@ public partial class Add_Teacher : System.Web.UI.Page
         MySqlConnection con;
         MySqlCommand cmd;
         String str;
-        con = new MySqlConnection("server=localhost;user id=2018BCGRP27;database=mcqexam;password=54397215");
+        string connString = System.Configuration.ConfigurationManager.ConnectionStrings["mcqexamConnectionString2"].ConnectionString;
+        con = new MySqlConnection(connString);
         con.Open();
         str = "Select * from teacher";
         cmd = new MySqlCommand(str, con);
@@ -36,7 +37,8 @@ public partial class Add_Teacher : System.Web.UI.Page
         MySqlConnection con;
         MySqlCommand cmd;
         String str;
-        con = new MySqlConnection("server=localhost;user id=2018BCGRP27;database=mcqexam;password=54397215");
+        string connString = System.Configuration.ConfigurationManager.ConnectionStrings["mcqexamConnectionString2"].ConnectionString;
+        con = new MySqlConnection(connString);
         con.Open();
 
 

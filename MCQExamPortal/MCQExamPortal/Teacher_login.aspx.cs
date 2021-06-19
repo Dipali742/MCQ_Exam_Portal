@@ -24,7 +24,8 @@ public partial class Teacher_login : System.Web.UI.Page
         MySqlConnection con;
         MySqlCommand cmd;
         String str;
-        con = new MySqlConnection("server=localhost;user id=2018BCGRP27;database=mcqexam;password=54397215");
+        string connString = System.Configuration.ConfigurationManager.ConnectionStrings["mcqexamConnectionString2"].ConnectionString;
+        con = new MySqlConnection(connString);
         con.Open();
         str = "select * from mcqexam.teacher where tid='"+tidd.Text+"' and tpass='" + pass.Text + "'";
         cmd = new MySqlCommand(str, con);

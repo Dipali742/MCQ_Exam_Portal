@@ -24,7 +24,8 @@ public partial class Add_Questions : System.Web.UI.Page
         MySqlConnection con;
         MySqlCommand cmd;
         String str;
-        con = new MySqlConnection("server=localhost;user id=2018BCGRP27;database=mcqexam;password=54397215");
+        string connString = System.Configuration.ConfigurationManager.ConnectionStrings["mcqexamConnectionString2"].ConnectionString;
+        con = new MySqlConnection(connString);
         con.Open();
         
        
@@ -58,7 +59,8 @@ public partial class Add_Questions : System.Web.UI.Page
     protected void Add_que(object sender, EventArgs e)
     {
         MySqlConnection con;
-        con = new MySqlConnection("server=localhost;user id=2018BCGRP27;database=mcqexam;password=54397215");
+        string connString = System.Configuration.ConfigurationManager.ConnectionStrings["mcqexamConnectionString2"].ConnectionString;
+        con = new MySqlConnection(connString);
         string filename = Path.GetFileName(FileUpload1.PostedFile.FileName);
         string contentType = FileUpload1.PostedFile.ContentType;
         

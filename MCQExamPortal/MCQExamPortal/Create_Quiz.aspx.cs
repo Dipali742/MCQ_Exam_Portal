@@ -27,7 +27,8 @@ public partial class Create_Quiz : System.Web.UI.Page
 
     private void BindGridView()
     {
-        con = new MySqlConnection("server=localhost;user id=2018BCGRP27;database=mcqexam;password=54397215");
+        string connString = System.Configuration.ConfigurationManager.ConnectionStrings["mcqexamConnectionString2"].ConnectionString;
+        con = new MySqlConnection(connString);
         con.Open();
         str = "select * from quiz;";
         cmd = new MySqlCommand(str, con);
@@ -62,7 +63,8 @@ public partial class Create_Quiz : System.Web.UI.Page
         MySqlConnection con;
         MySqlCommand cmd;
         String str;
-        con = new MySqlConnection("server=localhost;user id=2018BCGRP27;database=mcqexam;password=54397215");
+        string connString = System.Configuration.ConfigurationManager.ConnectionStrings["mcqexamConnectionString2"].ConnectionString;
+        con = new MySqlConnection(connString);
         con.Open();
 
            str = "INSERT INTO mcqexam.quiz(name,time,marks,createdBy) VALUES('" + this.quizname.Text + "','" + this.qt.Text + "','" + this.qmarks.Text + "','" + Session["username"] + "')";
