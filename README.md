@@ -15,7 +15,5 @@ time but with a time limit from start to finish
 - MySQL for visual studio
 - MySQL .NET connector
 
-## How to run the code :
-- Install all the requirements mentioned in Prerequisites section
-- Import all the .sql files from Queries folder in MySQL Workbench
-- 
+## Screenshots :
+![HomePage](https://github.com/Dipali742/MCQ_Exam_Portal/blob/main/Screenshots/Homepage.jpg)
