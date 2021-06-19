@@ -30,5 +30,5 @@ CREATE TABLE `quiz` (
   `createdBy` varchar(100) DEFAULT NULL,
   PRIMARY KEY (`qid`)
 ) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
-dsf
+
 

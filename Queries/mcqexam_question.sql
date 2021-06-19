@@ -38,6 +38,6 @@ CREATE TABLE `question` (
   KEY `fk_qid` (`qid`),
   CONSTRAINT `fk_qid` FOREIGN KEY (`qid`) REFERENCES `quiz` (`qid`)
 ) ENGINE=InnoDB AUTO_INCREMENT=23 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
-sdc
+
 
 

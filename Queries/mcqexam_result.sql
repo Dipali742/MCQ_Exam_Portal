@@ -30,5 +30,5 @@ CREATE TABLE `result` (
   `susername` varchar(100) DEFAULT NULL,
   PRIMARY KEY (`rid`)
 ) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
-sfa
+
 
