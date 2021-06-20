@@ -16,7 +16,7 @@ time but with a time limit from start to finish
 - MySQL .NET connector
 
 ## Usage :
-''' git clone https://github.com/Dipali742/MCQ_Exam_Portal.git '''
+``` git clone https://github.com/Dipali742/MCQ_Exam_Portal.git ```
 - Create database in MySQL workbench with name **_mcqexam_** 
   and import .sql files from [Queries](https://github.com/Dipali742/MCQ_Exam_Portal/tree/main/Queries) folder.
 - Now open the [MCQExamPortal](https://github.com/Dipali742/MCQ_Exam_Portal/tree/main/MCQExamPortal) Folder in Visual studio 2015.
