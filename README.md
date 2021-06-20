@@ -15,3 +15,11 @@ time but with a time limit from start to finish
 - MySQL for visual studio
 - MySQL .NET connector
 
+## Usage :
+- git clone https://github.com/Dipali742/MCQ_Exam_Portal.git
+- Create database in MySQL workbench with name # mcqexam 
+  and import .sql files from Queries folder.
+- Now open the MCQExamPortal Folder in Visual studio 2015
+- Add required references and connect to mysql database earlier created
+- Change the connection string in MCQExamPortal/MCQExamPortal/web.config file as per your credentials
+- Run the code using IIS server.
