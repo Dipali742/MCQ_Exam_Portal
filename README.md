@@ -1,4 +1,4 @@
-# MCQ_Exam_Portal
+# Online MCQ Examination System
 ## Problem Statement :
 Design and implement an examination system with following features :
 1. The system should support distributed contribution of questions by teaching assistants, editing of the
@@ -21,5 +21,5 @@ time but with a time limit from start to finish
   and import .sql files from Queries folder.
 - Now open the MCQExamPortal Folder in Visual studio 2015.
 - Add the required references and connect to mysql database.
-- Change the connection string in MCQExamPortal/MCQExamPortal/web.config file as per your credentials
+- Change the connection string in ![MCQExamPortal/MCQExamPortal/web.config](https://github.com/Dipali742/MCQ_Exam_Portal/blob/main/MCQExamPortal/MCQExamPortal/Web.config) file as per your credentials
 - Run the code!.
