@@ -17,7 +17,7 @@ time but with a time limit from start to finish
 
 ## Usage :
 - git clone https://github.com/Dipali742/MCQ_Exam_Portal.git
-- Create database in MySQL workbench with name **mcqexam** 
+- Create database in MySQL workbench with name ~~mcqexam~~ 
   and import .sql files from [Queries](https://github.com/Dipali742/MCQ_Exam_Portal/tree/main/Queries) folder.
 - Now open the MCQExamPortal Folder in Visual studio 2015.
 - Add the required references and connect to mysql database.
