@@ -19,7 +19,7 @@ time but with a time limit from start to finish
 - git clone https://github.com/Dipali742/MCQ_Exam_Portal.git
 - Create database in MySQL workbench with name # mcqexam 
   and import .sql files from Queries folder.
-- Now open the MCQExamPortal Folder in Visual studio 2015
-- Add required references and connect to mysql database earlier created
+- Now open the MCQExamPortal Folder in Visual studio 2015.
+- Add the required references and connect to mysql database.
 - Change the connection string in MCQExamPortal/MCQExamPortal/web.config file as per your credentials
-- Run the code using IIS server.
+- Run the code!.
