@@ -1,10 +1,10 @@
 # Online MCQ Examination System
 
 ## Table of Contents
-  [Problem Statement](https://github.com/Dipali742/MCQ_Exam_Portal#problem-statement)
-  [Requirements](https://github.com/Dipali742/MCQ_Exam_Portal#requirements)
-  [Usage](https://github.com/Dipali742/MCQ_Exam_Portal#usage)
-  [Demo](https://github.com/Dipali742/MCQ_Exam_Portal/tree/main/Screenshots)
+- [Problem Statement](https://github.com/Dipali742/MCQ_Exam_Portal#problem-statement)
+- [Requirements](https://github.com/Dipali742/MCQ_Exam_Portal#requirements)
+- [Usage](https://github.com/Dipali742/MCQ_Exam_Portal#usage)
+- [Demo](https://github.com/Dipali742/MCQ_Exam_Portal/tree/main/Screenshots)
 
 ## Problem Statement 
 Design and implement an examination system with following features :
