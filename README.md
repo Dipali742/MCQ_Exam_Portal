@@ -7,7 +7,7 @@
 - [Demo](https://github.com/Dipali742/MCQ_Exam_Portal/tree/main/Screenshots)
 
 ## Problem Statement 
-Design and implement an examination system with following features :
+Design and implement an examination system with the following features :
 1. The system should support distributed contribution of questions by teaching assistants, editing of the
 questions by whoever is in-charge of the course and creation of tests from the available set
 of questions.
