@@ -32,8 +32,7 @@ CREATE TABLE `question_bank` (
   `optt4` varchar(30) DEFAULT NULL,
   `anss` varchar(30) DEFAULT NULL,
   `markss` int DEFAULT NULL,
-  `image` longblob,
-  PRIMARY KEY (`queeid`)
+  `image` longblob
 ) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 
